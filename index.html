@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhya Tutorials</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-1">
+                    <span class="text-lg font-bold text-xl text-green-800">Vidhya</span>
+                    <span class="text-sm font-bold text-xl text-red-600">Tutorials</span>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-800 hover:text-green-800 transition">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-green-800 transition">About Us</a>
+                    <a href="#service" class="text-gray-800 hover:text-green-800 transition">Services</a>
+                    <a href="#why-us" class="text-gray-800 hover:text-green-800 transition">Why Us</a>
+                    <a href="#team" class="text-gray-800 hover:text-green-800 transition">Team</a>
+                    <a href="#contact-us" class="text-gray-800 hover:text-green-800 transition">Contact Us</a>
+                </div>
+
+                <!-- Social Media for Large Screens -->
+                <div class="hidden md:flex space-x-4">
+                    <!-- <a href="#" class="text-black hover:text-blue-500" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a> -->
+                    <a href="#" class="text-black hover:text-blue-500" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-black hover:text-blue-500" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-800 hover:text-green-800 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="menu" class="hidden md:hidden">
+            <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="#service" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Services</a>
+            <a href="#why-us" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Why Us</a>
+            <a href="#team" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Team</a>
+            <a href="#contact-us" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact Us</a>
+            <div class="flex space-x-4 mt-2 px-4">
+                <!-- <a href="#" class="text-black hover:text-blue-500" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a> -->
+                <a href="#" class="text-black hover:text-blue-500" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-black hover:text-blue-500" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('images/home-small.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+            <!-- Quote -->
+            <p class="text-white text-xl md:text-3xl font-semibold mb-20">
+                "Ab Apka Bachcha Nahi Rahega Pichhe"
+            </p>
+
+            <!-- Button -->
+            <a href="#about"
+                class="bg-green-800 text-white px-6 py-1 text-lg font-semibold rounded-md hover:bg-green-700 transition shadow-xl">
+                View More
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT US SECTION -->
+    <section class="bg-green-800 py-16" id="about">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+            <!-- Image Section -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
+                <img src="images/home.jpg" alt="Atlancia Worldwide About Us"
+                    class="rounded-lg shadow-lg w-full h-80 lg:h-auto object-cover">
+            </div>
+
+            <!-- Description Section -->
+            <div class="w-full lg:w-1/2 lg:pl-12">
+                <h2 class="text-lg md:text-3xl font-bold mb-4 text-black">About Vidhya Tutorials</h2>
+                <p class="text-gray-300 leading-relaxed mb-6 text-sm">
+                    Vidhya Tutorials is a trusted name in education, offering personalized coaching for students from
+                    Standard 1 to 10, as well as Science and Commerce streams for 11th and 12th grades. Our experienced
+                    faculty, innovative teaching methods, and commitment to academic excellence help students achieve
+                    their goals and excel in competitive and board exams. At Vidhya Tutorials, we focus on building
+                    strong foundational knowledge, enhancing problem-solving skills, and nurturing a passion for
+                    learning in every student.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6 text-sm">
+                    At Vidhya Tutorials, we are committed to delivering excellence in education. With a focus on
+                    building strong foundations and nurturing intellectual growth, we provide tailored coaching for
+                    students from standards 1 to 10, as well as specialized classes for 11th and 12th Science and
+                    Commerce streams. Our expert faculty ensures that every student achieves their academic goals with
+                    confidence and success. Vidhya Tutorials is your trusted partner in shaping a brighter future.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6 text-sm">
+                    At Vidhya Tutorials, we are committed to delivering exceptional educational experiences to students
+                    from Standard 1 to 10, as well as those pursuing Science and Commerce streams in Standards 11 & 12.
+                    Our approach is centered around individual attention, ensuring that every student receives
+                    personalized support to excel in their studies. We continuously update our curriculum to align with
+                    the latest educational standards and methodologies, fostering a passion for learning and helping
+                    students achieve academic success.
+                </p>
+                <a href="#why-us"
+                    class="bg-green-500 text-white text-md hover:bg-green-600 font-bold py-2 px-6 rounded transition duration-300000 md:ml-52 ml-16 sm:ml-36">
+                    Why Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="py-16 bg-gray-100" id="service">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-black mb-12">Our Tuition Classes</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <!-- Standard 1 to 9 -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Standard 1 to 9</h3>
+                    <p class="text-gray-600 mb-4">We provide personalized tuition classes for students from Standard 1
+                        to 9 with a focus on foundational skills.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+
+                <!-- Standard 10 -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Standard 10</h3>
+                    <p class="text-gray-600 mb-4">Expert tuition for Standard 10 students to ensure they excel in their
+                        exams and understand key concepts.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+
+                <!-- Standard 11 Science -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">11th Science</h3>
+                    <p class="text-gray-600 mb-4">Specialized tuition classes for Science students of 11th grade to
+                        strengthen their knowledge in subjects like Physics, Chemistry, and Biology.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+
+                <!-- Standard 11 Commerce -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">11th Commerce</h3>
+                    <p class="text-gray-600 mb-4">Dedicated tuition for 11th Commerce students to help them grasp the
+                        core concepts of Economics, Accountancy, and Business Studies.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+
+                <!-- Standard 12 Science -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">12th Science</h3>
+                    <p class="text-gray-600 mb-4">Advanced tuition classes for 12th Science students to prepare for
+                        board exams and competitive exams in subjects like Physics, Chemistry, and Mathematics.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+
+                <!-- Standard 12 Commerce -->
+                <div
+                    class="service-card p-6 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">12th Commerce</h3>
+                    <p class="text-gray-600 mb-4">Get the best tuition for 12th Commerce, including preparation for
+                        final exams in Economics, Accountancy, and Business Studies.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Us -->
+    <section class="py-16 bg-green-800" id="why-us">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-black mb-12">Why Choose Us?</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Expert Teachers</h3>
+                    <p class="text-gray-600 mb-4">Our experienced teachers ensure that every student receives individual attention and in-depth understanding of subjects.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+    
+                <!-- Reason 2 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Personalized Study Plans</h3>
+                    <p class="text-gray-600 mb-4">We create customized study plans based on the individual learning needs and goals of each student.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+    
+                <!-- Reason 3 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Results-Oriented Approach</h3>
+                    <p class="text-gray-600 mb-4">Our focus is to help students achieve their academic goals and excel in exams with focused learning strategies.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+    
+                <!-- Reason 4 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Interactive Learning</h3>
+                    <p class="text-gray-600 mb-4">We incorporate interactive and engaging teaching methods to make learning fun and memorable for our students.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+    
+                <!-- Reason 5 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-xl">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Affordable Fees</h3>
+                    <p class="text-gray-600 mb-4">We offer high-quality education at affordable rates, ensuring that every student gets the best value for their learning.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+    
+                <!-- Reason 6 -->
+                <div class="service-card p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-4">Flexible Timings</h3>
+                    <p class="text-gray-600 mb-4">Our flexible schedule allows students to choose tuition times that best fit their needs and lifestyle.</p>
+                    <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Team -->
+    <section class="py-16 bg-gray-100" id="team">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-12">Meet Our Team</h2>
+    
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-member p-6 bg-white rounded-lg shadow-lg text-center">
+                    <img src="images/home-small.jpg" alt="Team Member 1" class="w-48 h-48 rounded-full mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-2">Faculty 1</h3>
+                    <p class="text-gray-600 mb-4">Teaching Faculty in one or two line</p>
+                    <p class="text-gray-600 mb-4">About Faculty</p>
+                    <!-- <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a> -->
+                </div>
+    
+                <!-- Team Member 2 -->
+                <div class="team-member p-6 bg-white rounded-lg shadow-lg text-center">
+                    <img src="images/home-small.jpg" alt="Team Member 2" class="w-48 h-48 rounded-full mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-green-800 mb-2">Faculty 2</h3>
+                    <p class="text-gray-600 mb-4">Teaching Faculty</p>
+                    <p class="text-gray-600 mb-4">About Faculty in one or two line</p>
+                    <!-- <a href="#" class="text-green-800 font-semibold hover:text-red-600 transition">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- FORM -->
+    <!-- <div id="enquiry-form" class="contact-section section py-12 px-4 sm:px-8 bg-gray-200">
+        <div class="section-header text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">Contact Us</h2>
+            <p class="text-gray-600 mt-4">Get in touch with us for any inquiries or project discussions!</p>
+        </div>
+    
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                
+                <div class="lg:w-2/3 md:w-full p-4" data-aos="fade-left">
+                    <div class="contact-form-box bg-white rounded-lg shadow-lg p-6">
+                        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="alert('Your message has been sent successfully!');">
+
+                            <input type="hidden" name="access_key" value="3d392a2e-6a81-4390-a935-d905d03ebfb7">
+    
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <div class="w-full sm:w-1/2">
+                                    <label for="name" class="block text-sm font-semibold text-blue-600 mb-2">Name*</label>
+                                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Name*" required>
+                                </div>
+                                <div class="w-full sm:w-1/2">
+                                    <label for="email" class="block text-sm font-semibold text-blue-600 mb-2">Email*</label>
+                                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Email*" required>
+                                </div>
+                            </div>
+    
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-semibold text-blue-600 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Subject">
+                            </div>
+    
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-semibold text-blue-600 mb-2">Write Your Message*</label>
+                                <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Write Your Message*" required></textarea>
+                            </div>
+    
+                            <input type="checkbox" name="botcheck" style="display: none;">
+
+                            <button type="submit" class="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    
+
+    <!-- CONTACT SECTION -->
+    <section class="bg-green-800 text-white py-12" id="contact-us">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Left Side: Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Vidhya Tutorials</h3>
+                    <p class="text-yellow-300 mb-4 text-sm font-semibold">"Ab apka Bachcha nahi rahega Pichhe"
+                    </p>
+                    <p class="text-white text-sm">
+                        At Vidhya Tutorials, we are committed to providing top-notch educational services that cater to all your learning needs. Our emphasis on personalized learning, innovative teaching methods, and student success distinguishes us in the educational sector.
+                    </p>
+                </div>
+
+                <!-- Middle: Quick Links & Contact Info -->
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Quick Links</h3>
+                    <ul class="mb-6 space-y-2">
+                        <li><a href="#about" class="hover:text-blue-700 transition text-sm md:text-lg">About</a></li>
+                        <li><a href="#service" class="hover:text-blue-700 transition text-sm md:text-lg">Services</a>
+                        </li>
+                        <li><a href="#why-us" class="hover:text-blue-700 transition text-sm md:text-lg">Why Us</a>
+                        </li>
+                        <li><a href="#team" class="hover:text-blue-700 transition text-sm md:text-lg">Team</a>
+                        </li>
+                    </ul>
+                    <p><span class="font-semibold text-sm md:text-lg">Email :-</span> <a
+                            href="mailto:hetvidoshi2205@gmail.com"
+                            class="hover:text-blue-700 transition text-sm md:text-lg">hetvidoshi2205@gmail.com</a>
+                    </p>
+                    <p><span class="font-semibold text-sm md:text-lg">Phone :-</span> <a href="#"
+                            class="hover:text-blue-700 transition text-sm md:text-lg">+91 9428878468</a></p>
+                    <p><span class="font-semibold text-sm md:text-lg">Address :-</span> Surat Gujarat India</p>
+                </div>
+
+                <!-- Right Side: Follow Us -->
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <!-- Replace # with actual social media/contact links -->
+                        <a href="#" target="_blank"
+                            class="hover:text-blue-700 transition">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <!-- <a href="#" target="_blank"
+                            class="hover:text-blue-700 transition">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a> -->
+                        <!-- <a href="#" target="_blank"
+                            class="hover:text-blue-700 transition">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a> -->
+                        <a href="mailto:hetvidoshi2205@gmail.com" class="hover:text-blue-700 transition">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                        <!-- <a href="https://g.page/Atlancia Worldwide" target="_blank"
+                            class="hover:text-blue-700 transition">
+                            <i class="fab fa-google text-sm"></i>
+                        </a> -->
+                        <a href="tel:+919428878468" class="hover:text-blue-700 transition">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                    </div>
+                    <!-- Add your image here -->
+                    <!-- <div class="mb-12">
+                        <h2 class="text-xl font-bold ml-14 text-gray-800 md:ml-2">Proud Member</h2>
+                        <img src="images/sgcci.png" alt="Follow Us Image" class="w-28 h-32 bg-gray-600 ml-16 md:ml-4">
+                    </div> -->
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-center py-6 text-sm sm:text-lg md:text-lg lg:text-lg">
+        <p>&copy; 2024 <a href="https://hetvidoshi.me" class="text-white font-bold">Hetvi Doshi</a> All rights reserved.</p>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('menu');
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            // Toggle mobile menu visibility
+            menuButton.addEventListener('click', (event) => {
+                mobileMenu.classList.toggle('hidden');
+                event.stopPropagation(); // Prevent the menu from closing immediately after opening
+            });
+
+            // Close the mobile menu when clicking outside of it
+            document.addEventListener('click', (event) => {
+                const isClickInsideMenu = mobileMenu.contains(event.target) || menuButton.contains(event.target);
+                if (!isClickInsideMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when clicking a menu item
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+
+
+        // Smooth scrolling functionality for various sections
+        const smoothScroll = (selector) => {
+            document.querySelector(selector).scrollIntoView({
+                behavior: 'smooth'
+            });
+        };
+
+        document.querySelector('a[href="#"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#');
+        });
+
+        document.querySelector('a[href="#about"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#about');
+        });
+
+        document.querySelector('a[href="#service"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#service');
+        });
+
+        document.querySelector('a[href="#gallery"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#gallery');
+        });
+
+        document.querySelector('a[href="#why-us"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#why-us');
+        });
+
+        document.querySelector('a[href="#contact-us"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            smoothScroll('#contact-us');
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const smoothScroll = (selector) => {
+                document.querySelector(selector).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            };
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId && document.querySelector(targetId)) {
+                        smoothScroll(targetId);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
